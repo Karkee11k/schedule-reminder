@@ -1,0 +1,20 @@
+site_name: Day Order Reminder Docs
+
+theme:
+  name: "material"
+
+plugins:
+  - mkdocstrings
+
+nav:
+  - Home: index.md
+  - Introduction: introduction.md
+  - Installation: installation.md
+  - Configuration: configuration.md
+  - Google Sheets Integration: google_sheets_integration.md
+  - Email Sending: email_sending.md
+  - Usage: usage.md
+  - Code Explanation: code_explanation.md
+  - GitHub Actions Integration: github_actions_integration.md
+  - Conclusion: conclusion.md
+

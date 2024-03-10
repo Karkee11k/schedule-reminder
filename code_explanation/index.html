@@ -1,0 +1,1931 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../usage/">
+      
+      
+        <link rel="next" href="../github_actions_integration/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.13">
+    
+    
+      
+        <title>Code Explanation - Day Order Reminder Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.7e359304.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/_mkdocstrings.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#code-explanation" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Day Order Reminder Docs" class="md-header__button md-logo" aria-label="Day Order Reminder Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Day Order Reminder Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Code Explanation
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Day Order Reminder Docs" class="md-nav__button md-logo" aria-label="Day Order Reminder Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Day Order Reminder Docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../introduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../installation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Installation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../configuration/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Configuration
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../google_sheets_integration/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Google Sheets Integration
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../email_sending/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Email Sending
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../usage/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Usage
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Code Explanation
+  </span>
+  
+
+      </a>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../github_actions_integration/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    GitHub Actions Integration
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../conclusion/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Conclusion
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="code-explanation">Code Explanation</h1>
+<p>This section gives a reference for the <strong>technical implementation</strong> of the
+<strong>'day-order-reminder'</strong> project code.</p>
+<h1 id="overview">Overview</h1>
+
+
+<div class="doc doc-object doc-module">
+
+
+
+<a id="__init__"></a>
+  <div class="doc doc-contents first">
+  
+      <p>Automatically read Google Sheet and send emails with scheduled informations.</p>
+
+
+
+  <p><strong>Modules:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code><span title="__init__.- main">- main</span></code></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Main program of the script.</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><code><span title="__init__.- utils">- utils</span></code></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Provide some helper functions to the main program.</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><code><span title="__init__.- gsheets">- gsheets</span></code></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Provide a class to read public Google Sheet.</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><code><span title="__init__.- send_email">- send_email</span></code></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Provide a class to send email using Gmail SMTP server.</p>
+            </div>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+  
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+  </div>
+
+</div><h1 id="main-module">Main Module</h1>
+
+
+<div class="doc doc-object doc-module">
+
+
+
+<a id="main"></a>
+  <div class="doc doc-contents first">
+  
+      <p>Main Program: Daily Day Order and the Scheduled Classes Reminder.</p>
+<p>A python script for managing workday schedules and sending emails with
+the day order, periods and staffs.</p>
+
+<details class="environment-variables" open>
+  <summary>Environment Variables</summary>
+  <p>ME (str): Admin's or Developer's email address.
+SHEET_ID (str): Google Sheets ID.
+API_KEY (str): Google Sheets API key.
+MAIL_ID (str): Sender's email address.
+PASSWORD (str): Sender's email password.</p>
+</details>
+
+
+  <p><strong>Functions:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+          <tr>
+            <td><code><span title="main.- main">- main</span></code></td>
+            <td>
+              <div class="doc-md-description">
+                <p>Gets today date and sends the appropriate day order, periods and
+staffs to the specified email ID(s).</p>
+              </div>
+            </td>
+          </tr>
+    </tbody>
+  </table>
+
+  
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h2 id="main.main" class="doc doc-heading">
+          <code class="highlight language-python"><span class="n">main</span><span class="p">()</span></code>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Gets today date, retrieves day order, periods and staffs, then 
+sends the appropriate information to the recipients.</p>
+
+          <details class="quote">
+            <summary>Source code in <code>main.py</code></summary>
+            <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">38</span>
+<span class="normal">39</span>
+<span class="normal">40</span>
+<span class="normal">41</span>
+<span class="normal">42</span>
+<span class="normal">43</span>
+<span class="normal">44</span>
+<span class="normal">45</span>
+<span class="normal">46</span>
+<span class="normal">47</span>
+<span class="normal">48</span>
+<span class="normal">49</span>
+<span class="normal">50</span>
+<span class="normal">51</span>
+<span class="normal">52</span>
+<span class="normal">53</span>
+<span class="normal">54</span>
+<span class="normal">55</span>
+<span class="normal">56</span>
+<span class="normal">57</span>
+<span class="normal">58</span>
+<span class="normal">59</span>
+<span class="normal">60</span>
+<span class="normal">61</span>
+<span class="normal">62</span>
+<span class="normal">63</span>
+<span class="normal">64</span>
+<span class="normal">65</span>
+<span class="normal">66</span>
+<span class="normal">67</span>
+<span class="normal">68</span>
+<span class="normal">69</span>
+<span class="normal">70</span>
+<span class="normal">71</span>
+<span class="normal">72</span>
+<span class="normal">73</span>
+<span class="normal">74</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">main</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Gets today date, retrieves day order, periods and staffs, then </span>
+<span class="sd">    sends the appropriate information to the recipients.&quot;&quot;&quot;</span>
+
+    <span class="n">today</span> <span class="o">=</span> <span class="n">date</span><span class="o">.</span><span class="n">today</span><span class="p">()</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">%d</span><span class="s1">/%m/%Y&#39;</span><span class="p">)</span>     <span class="c1"># today date </span>
+    <span class="n">sheet</span> <span class="o">=</span> <span class="n">GSheet</span><span class="p">(</span><span class="n">SHEET_ID</span><span class="p">,</span> <span class="n">API_KEY</span><span class="p">)</span>             <span class="c1"># sheet object to read data </span>
+    <span class="n">mailer</span> <span class="o">=</span> <span class="n">GMailer</span><span class="p">(</span><span class="n">MAIL_ID</span><span class="p">,</span> <span class="n">PASSWORD</span><span class="p">)</span>           <span class="c1"># Gmailer object to send mail</span>
+    <span class="n">calendar</span> <span class="o">=</span> <span class="n">sheet</span><span class="o">.</span><span class="n">fetch</span><span class="p">(</span><span class="s1">&#39;AGAC Calendar&#39;</span><span class="p">)</span>       <span class="c1"># College calendar </span>
+
+    <span class="c1"># if calendar is empty, sends an info and terminates the program</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">calendar</span><span class="p">:</span>  
+        <span class="n">mailer</span><span class="o">.</span><span class="n">send</span><span class="p">(</span><span class="n">ME</span><span class="p">,</span> <span class="s1">&#39;info&#39;</span><span class="p">,</span> <span class="s1">&#39;no data found&#39;</span><span class="p">)</span> 
+        <span class="k">return</span>  
+
+    <span class="n">day_order</span> <span class="o">=</span> <span class="n">get_day_order</span><span class="p">(</span><span class="n">today</span><span class="p">,</span> <span class="n">calendar</span><span class="p">)</span>    <span class="c1"># today day order</span>
+
+    <span class="c1"># if day order is none, sends an info and terminates the program</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">day_order</span><span class="p">:</span> 
+        <span class="n">mailer</span><span class="o">.</span><span class="n">send</span><span class="p">(</span><span class="n">ME</span><span class="p">,</span> <span class="s1">&#39;info&#39;</span><span class="p">,</span> <span class="s1">&#39;might be a holiday&#39;</span><span class="p">)</span>
+        <span class="k">return</span> 
+
+    <span class="n">_range</span> <span class="o">=</span> <span class="sa">f</span><span class="s1">&#39;Periods!A</span><span class="si">{</span><span class="n">day_order</span><span class="si">}</span><span class="s1">:E</span><span class="si">{</span><span class="n">day_order</span><span class="si">}</span><span class="s1">&#39;</span> <span class="c1"># periods range for the day order</span>
+    <span class="n">periods</span> <span class="o">=</span> <span class="n">sheet</span><span class="o">.</span><span class="n">fetch</span><span class="p">(</span><span class="n">_range</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>              <span class="c1"># classes for the day order</span>
+    <span class="n">_range</span> <span class="o">=</span> <span class="sa">f</span><span class="s1">&#39;Staffs!A</span><span class="si">{</span><span class="n">day_order</span><span class="si">}</span><span class="s1">:E</span><span class="si">{</span><span class="n">day_order</span><span class="si">}</span><span class="s1">&#39;</span>  <span class="c1"># staffs range for the day order </span>
+    <span class="n">staffs</span> <span class="o">=</span> <span class="n">sheet</span><span class="o">.</span><span class="n">fetch</span><span class="p">(</span><span class="n">_range</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>               <span class="c1"># staffs for the day order</span>
+    <span class="n">_range</span> <span class="o">=</span> <span class="s1">&#39;Mail ID!A1:A1&#39;</span>                      <span class="c1"># range for the mail id</span>
+    <span class="n">mail_id</span> <span class="o">=</span> <span class="n">sheet</span><span class="o">.</span><span class="n">fetch</span><span class="p">(</span><span class="n">_range</span><span class="p">)</span>                 <span class="c1"># Student&#39;s mail id</span>
+
+    <span class="c1"># if any of them is empty, sends an info and terminates the program</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">periods</span> <span class="ow">or</span> <span class="ow">not</span> <span class="n">mail_id</span> <span class="ow">or</span> <span class="ow">not</span> <span class="n">staffs</span><span class="p">:</span>
+        <span class="n">mailer</span><span class="o">.</span><span class="n">send</span><span class="p">(</span><span class="n">ME</span><span class="p">,</span> <span class="s1">&#39;info&#39;</span><span class="p">,</span> <span class="s1">&#39;no data found&#39;</span><span class="p">)</span>
+        <span class="k">return</span> 
+
+    <span class="n">recipient</span> <span class="o">=</span> <span class="p">[</span><span class="nb">id</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="k">for</span> <span class="nb">id</span> <span class="ow">in</span> <span class="n">mail_id</span><span class="p">]</span>
+    <span class="n">subject</span> <span class="o">=</span> <span class="sa">f</span><span class="s1">&#39;Today Day Order </span><span class="si">{</span><span class="n">today</span><span class="si">}</span><span class="s1">&#39;</span>
+    <span class="n">message</span> <span class="o">=</span> <span class="n">make_message</span><span class="p">(</span><span class="n">day_order</span><span class="p">,</span> <span class="n">periods</span><span class="p">,</span> <span class="n">staffs</span><span class="p">)</span> 	
+    <span class="n">mailer</span><span class="o">.</span><span class="n">send</span><span class="p">(</span><span class="n">recipient</span><span class="p">,</span> <span class="n">subject</span><span class="p">,</span> <span class="n">message</span><span class="p">)</span>      <span class="c1"># mail sent	    </span>
+</code></pre></div></td></tr></table></div>
+          </details>
+  </div>
+
+</div>
+
+
+
+  </div>
+
+  </div>
+
+</div><h1 id="utils-module">Utils Module</h1>
+
+
+<div class="doc doc-object doc-module">
+
+
+
+<a id="utils"></a>
+  <div class="doc doc-contents first">
+  
+      <p>Provides some utility funtions.</p>
+<p>This module has functions to getting day order and to generating a message
+with periods and staffs.</p>
+
+
+
+  <p><strong>Functions:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+          <tr>
+            <td><code><span title="utils.- get_day_order">- get_day_order</span></code></td>
+            <td>
+              <div class="doc-md-description">
+                <p>Returns the day order if the date is a working day, otherwise None.</p>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td><code><span title="utils.- make_message">- make_message</span></code></td>
+            <td>
+              <div class="doc-md-description">
+                <p>Constructs a message with the periods and corresponding staffs for 
+the given day order.</p>
+              </div>
+            </td>
+          </tr>
+    </tbody>
+  </table>
+
+  
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h2 id="utils.get_day_order" class="doc doc-heading">
+          <code class="highlight language-python"><span class="n">get_day_order</span><span class="p">(</span><span class="n">date</span><span class="p">,</span> <span class="n">calendar</span><span class="p">)</span></code>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Returns the day order from the calendar for the given date, if
+it's a working day.</p>
+
+
+
+<p><strong>Examples:</strong></p>
+    <div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">calendar</span> <span class="o">=</span> <span class="p">[[</span><span class="s1">&#39;03/03/2024&#39;</span><span class="p">,</span> <span class="s1">&#39;y&#39;</span><span class="p">,</span> <span class="s1">&#39;2&#39;</span><span class="p">],</span> <span class="p">[</span><span class="s1">&#39;04/03/2024&#39;</span><span class="p">,</span> <span class="s1">&#39;n&#39;</span><span class="p">,</span> <span class="kc">None</span><span class="p">]]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">get_day_order</span><span class="p">(</span><span class="s1">&#39;03/03/2024&#39;</span><span class="p">,</span> <span class="n">calendar</span><span class="p">)</span>
+<span class="go">2</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">get_dat_order</span><span class="p">(</span><span class="s1">&#39;04/03/2024&#39;</span><span class="p">,</span> <span class="n">calendar</span><span class="p">)</span>
+<span class="go">None</span>
+</code></pre></div>
+
+
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>date</code></td>
+          <td>
+                <code>str</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>The date for which the day order is requested.</p>
+            </div>
+          </td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+        <tr>
+          <td><code>calendar</code></td>
+          <td>
+                <code>list</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>List of lists representing the calendar, where</p>
+            </div>
+          </td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>
+                <code><span title="typing.Union">Union</span>[str, None]</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>str or None: The day order if the given date is a working day;</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+                <code><span title="typing.Union">Union</span>[str, None]</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>otherwise, None.</p>
+            </div>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+          <details class="quote">
+            <summary>Source code in <code>utils.py</code></summary>
+            <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span>
+<span class="normal">31</span>
+<span class="normal">32</span>
+<span class="normal">33</span>
+<span class="normal">34</span>
+<span class="normal">35</span>
+<span class="normal">36</span>
+<span class="normal">37</span>
+<span class="normal">38</span>
+<span class="normal">39</span>
+<span class="normal">40</span>
+<span class="normal">41</span>
+<span class="normal">42</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">get_day_order</span><span class="p">(</span><span class="n">date</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">calendar</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]])</span> <span class="o">-&gt;</span> <span class="n">Union</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="kc">None</span><span class="p">]:</span> 
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Returns the day order from the calendar for the given date, if</span>
+<span class="sd">    it&#39;s a working day.</span>
+
+<span class="sd">    Examples:</span>
+<span class="sd">        &gt;&gt;&gt; calendar = [[&#39;03/03/2024&#39;, &#39;y&#39;, &#39;2&#39;], [&#39;04/03/2024&#39;, &#39;n&#39;, None]]</span>
+<span class="sd">        &gt;&gt;&gt; get_day_order(&#39;03/03/2024&#39;, calendar)</span>
+<span class="sd">        2</span>
+<span class="sd">        &gt;&gt;&gt; get_dat_order(&#39;04/03/2024&#39;, calendar)</span>
+<span class="sd">        None</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        date (str): The date for which the day order is requested.</span>
+<span class="sd">        calendar (list): List of lists representing the calendar, where</span>
+<span class="sd">        each sub list contains date, working day indicator and day order.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        str or None: The day order if the given date is a working day;</span>
+<span class="sd">        otherwise, None.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">calendar</span><span class="p">:</span> 
+        <span class="k">if</span> <span class="n">row</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">!=</span> <span class="n">date</span><span class="p">:</span> 
+            <span class="k">continue</span> 
+        <span class="k">return</span> <span class="n">row</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="k">if</span> <span class="s1">&#39;y&#39;</span> <span class="ow">in</span> <span class="n">row</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="k">else</span> <span class="kc">None</span>
+</code></pre></div></td></tr></table></div>
+          </details>
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h2 id="utils.make_message" class="doc doc-heading">
+          <code class="highlight language-python"><span class="n">make_message</span><span class="p">(</span><span class="n">day_order</span><span class="p">,</span> <span class="n">periods</span><span class="p">,</span> <span class="n">staffs</span><span class="p">)</span></code>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Creates and returns a message with the periods and the staffs.</p>
+
+
+
+<p><strong>Examples:</strong></p>
+    <div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">make_message</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;DSA&#39;</span><span class="p">,</span> <span class="s1">&#39;Java&#39;</span><span class="p">],</span> <span class="p">[</span><span class="s1">&#39;KK&#39;</span><span class="p">,</span> <span class="s1">&#39;YY&#39;</span><span class="p">])</span>
+<span class="go">Day 3 order:</span>
+<span class="go">    1st period - DSA by KK</span>
+<span class="go">    2nd period - Java by YY</span>
+</code></pre></div>
+
+
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>day_order</code></td>
+          <td>
+                <code>str</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>The day order.</p>
+            </div>
+          </td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+        <tr>
+          <td><code>periods</code></td>
+          <td>
+                <code>list</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>The classes for the day order.</p>
+            </div>
+          </td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+        <tr>
+          <td><code>staffs</code></td>
+          <td>
+                <code>list</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>The staffs for the classes.</p>
+            </div>
+          </td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+<th>Name</th>        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+<td><code>str</code></td>          <td>
+                <code>str</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>A message with day order, classes and the staffs.</p>
+            </div>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+          <details class="quote">
+            <summary>Source code in <code>utils.py</code></summary>
+            <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">45</span>
+<span class="normal">46</span>
+<span class="normal">47</span>
+<span class="normal">48</span>
+<span class="normal">49</span>
+<span class="normal">50</span>
+<span class="normal">51</span>
+<span class="normal">52</span>
+<span class="normal">53</span>
+<span class="normal">54</span>
+<span class="normal">55</span>
+<span class="normal">56</span>
+<span class="normal">57</span>
+<span class="normal">58</span>
+<span class="normal">59</span>
+<span class="normal">60</span>
+<span class="normal">61</span>
+<span class="normal">62</span>
+<span class="normal">63</span>
+<span class="normal">64</span>
+<span class="normal">65</span>
+<span class="normal">66</span>
+<span class="normal">67</span>
+<span class="normal">68</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">make_message</span><span class="p">(</span><span class="n">day_order</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">periods</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span> <span class="n">staffs</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span> 
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Creates and returns a message with the periods and the staffs.</span>
+
+<span class="sd">    Examples:</span>
+<span class="sd">        &gt;&gt;&gt; make_message(3, [&#39;DSA&#39;, &#39;Java&#39;], [&#39;KK&#39;, &#39;YY&#39;])</span>
+<span class="sd">        Day 3 order:</span>
+<span class="sd">            1st period - DSA by KK</span>
+<span class="sd">            2nd period - Java by YY</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        day_order (str): The day order.</span>
+<span class="sd">        periods (list): The classes for the day order.</span>
+<span class="sd">        staffs (list): The staffs for the classes.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        str: A message with day order, classes and the staffs.</span>
+<span class="sd">    &quot;&quot;&quot;</span> 
+    <span class="n">message</span> <span class="o">=</span> <span class="sa">f</span><span class="s1">&#39;Day </span><span class="si">{</span><span class="n">day_order</span><span class="si">}</span><span class="s1"> order:</span><span class="se">\n</span><span class="s1">&#39;</span> 
+    <span class="n">suffices</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;st&#39;</span><span class="p">,</span> <span class="s1">&#39;nd&#39;</span><span class="p">,</span> <span class="s1">&#39;rd&#39;</span><span class="p">,</span> <span class="s1">&#39;th&#39;</span><span class="p">]</span>	
+
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">periods</span><span class="p">)):</span>
+        <span class="n">suffix</span> <span class="o">=</span> <span class="n">suffices</span><span class="p">[</span><span class="nb">min</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="mi">3</span><span class="p">)]</span>
+        <span class="n">message</span> <span class="o">+=</span> <span class="sa">f</span><span class="s1">&#39;</span><span class="se">\t</span><span class="si">{</span><span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span><span class="si">}{</span><span class="n">suffix</span><span class="si">}</span><span class="s1"> period - </span><span class="si">{</span><span class="n">periods</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="si">}</span><span class="s1"> by </span><span class="si">{</span><span class="n">staffs</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="si">}</span><span class="se">\n</span><span class="s1">&#39;</span> 
+    <span class="k">return</span> <span class="n">message</span>	
+</code></pre></div></td></tr></table></div>
+          </details>
+  </div>
+
+</div>
+
+
+
+  </div>
+
+  </div>
+
+</div><h1 id="gsheets-module">Gsheets Module</h1>
+
+
+<div class="doc doc-object doc-module">
+
+
+
+<a id="gsheets"></a>
+  <div class="doc doc-contents first">
+  
+      <p>Module to interact with the public Google Sheets using Google Sheets API.</p>
+<p>This module provides a class GSheet to fetch data from public Google Sheet.</p>
+
+
+
+  <p><strong>Classes:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code><a class="autorefs autorefs-internal" title="gsheets.GSheet" href="#gsheets.GSheet">GSheet</a></code></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Class to interact with public Google Sheets using Google</p>
+            </div>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+  
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-class">
+
+
+
+<h2 id="gsheets.GSheet" class="doc doc-heading">
+          <code>GSheet</code>
+
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+
+  
+      <p>Class to read from public Google Sheets using Google Sheets API.</p>
+
+
+
+  <p><strong>Attributes:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code><span title="gsheets.GSheet.__spreadsheetId">__spreadsheetId</span></code></td>
+          <td>
+                <code>str</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>The ID of the Google Sheets spreadsheet.</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><code><span title="gsheets.GSheet.__service">__service</span></code></td>
+          <td>
+                <code><span title="googleapiclient.discovery.resource">resource</span></code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>The service </p>
+            </div>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+            <details class="quote">
+              <summary>Source code in <code>gsheets.py</code></summary>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span>
+<span class="normal">31</span>
+<span class="normal">32</span>
+<span class="normal">33</span>
+<span class="normal">34</span>
+<span class="normal">35</span>
+<span class="normal">36</span>
+<span class="normal">37</span>
+<span class="normal">38</span>
+<span class="normal">39</span>
+<span class="normal">40</span>
+<span class="normal">41</span>
+<span class="normal">42</span>
+<span class="normal">43</span>
+<span class="normal">44</span>
+<span class="normal">45</span>
+<span class="normal">46</span>
+<span class="normal">47</span>
+<span class="normal">48</span>
+<span class="normal">49</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span> <span class="nc">GSheet</span><span class="p">:</span> 
+<span class="w">	</span><span class="sd">&quot;&quot;&quot;Class to read from public Google Sheets using Google Sheets API.</span>
+
+<span class="sd">	Attributes:</span>
+<span class="sd">		__spreadsheetId (str): The ID of the Google Sheets spreadsheet.</span>
+<span class="sd">		__service (googleapiclient.discovery.resource): The service </span>
+<span class="sd">		object for interacting with Google Sheets API.</span>
+<span class="sd">	&quot;&quot;&quot;</span> 
+
+	<span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">sheet_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">api_key</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span> 
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;Initailizes the GSheet with the spreadsheet ID, API key and</span>
+<span class="sd">		builds the service.</span>
+
+<span class="sd">		Args:</span>
+<span class="sd">			sheet_id (str): The ID of the Google Sheets spreadsheet.</span>
+<span class="sd">			api_key (str): The API key used to authenticate with the</span>
+<span class="sd">			Google Sheets API.</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">__spreadsheetId</span> <span class="o">=</span> <span class="n">sheet_id</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">__service</span> <span class="o">=</span> <span class="n">build</span><span class="p">(</span><span class="s1">&#39;sheets&#39;</span><span class="p">,</span> <span class="s1">&#39;v4&#39;</span><span class="p">,</span> <span class="n">developerKey</span><span class="o">=</span><span class="n">api_key</span><span class="p">)</span>  
+
+
+	<span class="k">def</span> <span class="nf">fetch</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">sheet_range</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]]:</span> 
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;Fetches and Returns the sheet&#39;s data in the specified range.</span>
+
+<span class="sd">		Args:</span>
+<span class="sd">			sheet_range (str): The range of cells to retrieve data from,</span>
+<span class="sd">			e.g., &#39;Sheet!A1:B2&#39;.</span>
+
+<span class="sd">		Returns:</span>
+<span class="sd">			list: The list of data from the specified range.</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">sheet</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__service</span><span class="o">.</span><span class="n">spreadsheets</span><span class="p">()</span>
+		<span class="n">result</span> <span class="o">=</span> <span class="n">sheet</span><span class="o">.</span><span class="n">values</span><span class="p">()</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">spreadsheetId</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">__spreadsheetId</span><span class="p">,</span> <span class="nb">range</span><span class="o">=</span><span class="n">sheet_range</span><span class="p">)</span><span class="o">.</span><span class="n">execute</span><span class="p">()</span>	
+		<span class="k">return</span> <span class="n">result</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;values&quot;</span><span class="p">,</span> <span class="p">[])</span>
+</code></pre></div></td></tr></table></div>
+            </details>
+
+  
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="gsheets.GSheet.__init__" class="doc doc-heading">
+          <code class="highlight language-python"><span class="fm">__init__</span><span class="p">(</span><span class="n">sheet_id</span><span class="p">,</span> <span class="n">api_key</span><span class="p">)</span></code>
+
+</h3>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Initailizes the GSheet with the spreadsheet ID, API key and
+builds the service.</p>
+
+
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>sheet_id</code></td>
+          <td>
+                <code>str</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>The ID of the Google Sheets spreadsheet.</p>
+            </div>
+          </td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+        <tr>
+          <td><code>api_key</code></td>
+          <td>
+                <code>str</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>The API key used to authenticate with the</p>
+            </div>
+          </td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+          <details class="quote">
+            <summary>Source code in <code>gsheets.py</code></summary>
+            <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span>
+<span class="normal">31</span>
+<span class="normal">32</span>
+<span class="normal">33</span>
+<span class="normal">34</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">sheet_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">api_key</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span> 
+<span class="w">	</span><span class="sd">&quot;&quot;&quot;Initailizes the GSheet with the spreadsheet ID, API key and</span>
+<span class="sd">	builds the service.</span>
+
+<span class="sd">	Args:</span>
+<span class="sd">		sheet_id (str): The ID of the Google Sheets spreadsheet.</span>
+<span class="sd">		api_key (str): The API key used to authenticate with the</span>
+<span class="sd">		Google Sheets API.</span>
+<span class="sd">	&quot;&quot;&quot;</span>
+	<span class="bp">self</span><span class="o">.</span><span class="n">__spreadsheetId</span> <span class="o">=</span> <span class="n">sheet_id</span>
+	<span class="bp">self</span><span class="o">.</span><span class="n">__service</span> <span class="o">=</span> <span class="n">build</span><span class="p">(</span><span class="s1">&#39;sheets&#39;</span><span class="p">,</span> <span class="s1">&#39;v4&#39;</span><span class="p">,</span> <span class="n">developerKey</span><span class="o">=</span><span class="n">api_key</span><span class="p">)</span>  
+</code></pre></div></td></tr></table></div>
+          </details>
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="gsheets.GSheet.fetch" class="doc doc-heading">
+          <code class="highlight language-python"><span class="n">fetch</span><span class="p">(</span><span class="n">sheet_range</span><span class="p">)</span></code>
+
+</h3>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Fetches and Returns the sheet's data in the specified range.</p>
+
+
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>sheet_range</code></td>
+          <td>
+                <code>str</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>The range of cells to retrieve data from,</p>
+            </div>
+          </td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+        <tr>
+          <td><code>e.g.,</code></td>
+          <td>
+                <code>&#39;Sheet!A1</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>B2'.</p>
+            </div>
+          </td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+<th>Name</th>        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+<td><code>list</code></td>          <td>
+                <code><span title="typing.List">List</span>[<span title="typing.List">List</span>[str]]</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>The list of data from the specified range.</p>
+            </div>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+          <details class="quote">
+            <summary>Source code in <code>gsheets.py</code></summary>
+            <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">37</span>
+<span class="normal">38</span>
+<span class="normal">39</span>
+<span class="normal">40</span>
+<span class="normal">41</span>
+<span class="normal">42</span>
+<span class="normal">43</span>
+<span class="normal">44</span>
+<span class="normal">45</span>
+<span class="normal">46</span>
+<span class="normal">47</span>
+<span class="normal">48</span>
+<span class="normal">49</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">fetch</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">sheet_range</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]]:</span> 
+<span class="w">	</span><span class="sd">&quot;&quot;&quot;Fetches and Returns the sheet&#39;s data in the specified range.</span>
+
+<span class="sd">	Args:</span>
+<span class="sd">		sheet_range (str): The range of cells to retrieve data from,</span>
+<span class="sd">		e.g., &#39;Sheet!A1:B2&#39;.</span>
+
+<span class="sd">	Returns:</span>
+<span class="sd">		list: The list of data from the specified range.</span>
+<span class="sd">	&quot;&quot;&quot;</span>
+	<span class="n">sheet</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__service</span><span class="o">.</span><span class="n">spreadsheets</span><span class="p">()</span>
+	<span class="n">result</span> <span class="o">=</span> <span class="n">sheet</span><span class="o">.</span><span class="n">values</span><span class="p">()</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">spreadsheetId</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">__spreadsheetId</span><span class="p">,</span> <span class="nb">range</span><span class="o">=</span><span class="n">sheet_range</span><span class="p">)</span><span class="o">.</span><span class="n">execute</span><span class="p">()</span>	
+	<span class="k">return</span> <span class="n">result</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;values&quot;</span><span class="p">,</span> <span class="p">[])</span>
+</code></pre></div></td></tr></table></div>
+          </details>
+  </div>
+
+</div>
+
+
+
+  </div>
+
+  </div>
+
+
+</div>
+
+
+
+
+  </div>
+
+  </div>
+
+</div><h1 id="send_email-module">Send_email Module</h1>
+
+
+<div class="doc doc-object doc-module">
+
+
+
+<a id="send_email"></a>
+  <div class="doc doc-contents first">
+  
+      <p>Module to send mail using Gmail SMTP server.</p>
+<p>This module provides a class to send mail.</p>
+
+
+
+  <p><strong>Classes:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code><a class="autorefs autorefs-internal" title="send_email.GMailer" href="#send_email.GMailer">GMailer</a></code></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Class to send mail using Gmail SMTP server.</p>
+            </div>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+  
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-class">
+
+
+
+<h2 id="send_email.GMailer" class="doc doc-heading">
+          <code>GMailer</code>
+
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+
+  
+      <p>Class to send mail using Gmail SMTP server.</p>
+
+
+
+  <p><strong>Attributes:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code><span title="send_email.GMailer.__server">__server</span></code></td>
+          <td>
+                <code>str</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>The SMTP server address (smtp.gmail.com).</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><code><span title="send_email.GMailer.__port">__port</span></code></td>
+          <td>
+                <code>int</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>The port number (465) used for SSL connection.</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><code><span title="send_email.GMailer.__context">__context</span></code></td>
+          <td>
+                <code><span title="ssl.SSLContext">SSLContext</span></code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>SSL context for secure connection.</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><code><span title="send_email.GMailer.__from">__from</span></code></td>
+          <td>
+                <code>str</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>The sender's email address.</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><code><span title="send_email.GMailer.__password">__password</span></code></td>
+          <td>
+                <code>str</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>The sender's email password.</p>
+            </div>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+            <details class="quote">
+              <summary>Source code in <code>send_email.py</code></summary>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span>
+<span class="normal">31</span>
+<span class="normal">32</span>
+<span class="normal">33</span>
+<span class="normal">34</span>
+<span class="normal">35</span>
+<span class="normal">36</span>
+<span class="normal">37</span>
+<span class="normal">38</span>
+<span class="normal">39</span>
+<span class="normal">40</span>
+<span class="normal">41</span>
+<span class="normal">42</span>
+<span class="normal">43</span>
+<span class="normal">44</span>
+<span class="normal">45</span>
+<span class="normal">46</span>
+<span class="normal">47</span>
+<span class="normal">48</span>
+<span class="normal">49</span>
+<span class="normal">50</span>
+<span class="normal">51</span>
+<span class="normal">52</span>
+<span class="normal">53</span>
+<span class="normal">54</span>
+<span class="normal">55</span>
+<span class="normal">56</span>
+<span class="normal">57</span>
+<span class="normal">58</span>
+<span class="normal">59</span>
+<span class="normal">60</span>
+<span class="normal">61</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span> <span class="nc">GMailer</span><span class="p">:</span> 
+<span class="w">	</span><span class="sd">&quot;&quot;&quot;Class to send mail using Gmail SMTP server.</span>
+
+<span class="sd">	Attributes:</span>
+<span class="sd">		__server (str): The SMTP server address (smtp.gmail.com).</span>
+<span class="sd">		__port (int): The port number (465) used for SSL connection.</span>
+<span class="sd">		__context (ssl.SSLContext): SSL context for secure connection.</span>
+<span class="sd">		__from (str): The sender&#39;s email address.</span>
+<span class="sd">		__password (str): The sender&#39;s email password.</span>
+<span class="sd">	&quot;&quot;&quot;</span>
+
+	<span class="n">__server</span> <span class="o">=</span> <span class="s2">&quot;smtp.gmail.com&quot;</span>
+	<span class="n">__port</span> <span class="o">=</span> <span class="mi">465</span>
+	<span class="n">__context</span> <span class="o">=</span> <span class="n">ssl</span><span class="o">.</span><span class="n">create_default_context</span><span class="p">()</span>
+
+
+	<span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">mail_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">password</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span> 
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;Initializes the GMailer with sender&#39;s email and password.</span>
+
+<span class="sd">		Args:</span>
+<span class="sd">			mail_id (str): The sender&#39;s email address.</span>
+<span class="sd">			password (str): The sender&#39;s email password.</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">__from</span> <span class="o">=</span> <span class="n">mail_id</span> 
+		<span class="bp">self</span><span class="o">.</span><span class="n">__password</span> <span class="o">=</span> <span class="n">password</span>
+
+
+	<span class="k">def</span> <span class="nf">send</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">recipients</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span> <span class="n">subject</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">message</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span> 
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;Sends an email to the given recipients.</span>
+
+<span class="sd">		Args:</span>
+<span class="sd">			recipients (list): List of recipient email address.</span>
+<span class="sd">			subject (str): Subject of the email.</span>
+<span class="sd">			message (str): Body of the email.</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">email</span> <span class="o">=</span> <span class="n">MIMEMultipart</span><span class="p">()</span>
+		<span class="n">email</span><span class="p">[</span><span class="s1">&#39;From&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__from</span>
+		<span class="n">email</span><span class="p">[</span><span class="s1">&#39;To&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;, &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">recipients</span><span class="p">)</span>
+		<span class="n">email</span><span class="p">[</span><span class="s1">&#39;Subject&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">Header</span><span class="p">(</span><span class="n">subject</span><span class="p">,</span> <span class="s1">&#39;utf-8&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">encode</span><span class="p">()</span>
+		<span class="n">email_content</span> <span class="o">=</span> <span class="n">MIMEText</span><span class="p">(</span><span class="n">message</span><span class="p">,</span> <span class="s1">&#39;plain&#39;</span><span class="p">,</span> <span class="s1">&#39;utf-8&#39;</span><span class="p">)</span>
+		<span class="n">email</span><span class="o">.</span><span class="n">attach</span><span class="p">(</span><span class="n">email_content</span><span class="p">)</span>
+
+		<span class="k">with</span> <span class="n">smtplib</span><span class="o">.</span><span class="n">SMTP_SSL</span><span class="p">(</span><span class="n">GMailer</span><span class="o">.</span><span class="n">__server</span><span class="p">,</span> <span class="n">GMailer</span><span class="o">.</span><span class="n">__port</span><span class="p">,</span><span class="n">context</span><span class="o">=</span><span class="n">GMailer</span><span class="o">.</span><span class="n">__context</span><span class="p">)</span> <span class="k">as</span> <span class="n">server</span><span class="p">:</span>
+			<span class="n">server</span><span class="o">.</span><span class="n">login</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">__from</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">__password</span><span class="p">)</span> 
+			<span class="n">server</span><span class="o">.</span><span class="n">sendmail</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">__from</span><span class="p">,</span> <span class="n">recipients</span><span class="p">,</span> <span class="n">email</span><span class="o">.</span><span class="n">as_string</span><span class="p">())</span>  
+</code></pre></div></td></tr></table></div>
+            </details>
+
+  
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="send_email.GMailer.__init__" class="doc doc-heading">
+          <code class="highlight language-python"><span class="fm">__init__</span><span class="p">(</span><span class="n">mail_id</span><span class="p">,</span> <span class="n">password</span><span class="p">)</span></code>
+
+</h3>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Initializes the GMailer with sender's email and password.</p>
+
+
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>mail_id</code></td>
+          <td>
+                <code>str</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>The sender's email address.</p>
+            </div>
+          </td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+        <tr>
+          <td><code>password</code></td>
+          <td>
+                <code>str</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>The sender's email password.</p>
+            </div>
+          </td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+          <details class="quote">
+            <summary>Source code in <code>send_email.py</code></summary>
+            <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">33</span>
+<span class="normal">34</span>
+<span class="normal">35</span>
+<span class="normal">36</span>
+<span class="normal">37</span>
+<span class="normal">38</span>
+<span class="normal">39</span>
+<span class="normal">40</span>
+<span class="normal">41</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">mail_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">password</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span> 
+<span class="w">	</span><span class="sd">&quot;&quot;&quot;Initializes the GMailer with sender&#39;s email and password.</span>
+
+<span class="sd">	Args:</span>
+<span class="sd">		mail_id (str): The sender&#39;s email address.</span>
+<span class="sd">		password (str): The sender&#39;s email password.</span>
+<span class="sd">	&quot;&quot;&quot;</span>
+	<span class="bp">self</span><span class="o">.</span><span class="n">__from</span> <span class="o">=</span> <span class="n">mail_id</span> 
+	<span class="bp">self</span><span class="o">.</span><span class="n">__password</span> <span class="o">=</span> <span class="n">password</span>
+</code></pre></div></td></tr></table></div>
+          </details>
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="send_email.GMailer.send" class="doc doc-heading">
+          <code class="highlight language-python"><span class="n">send</span><span class="p">(</span><span class="n">recipients</span><span class="p">,</span> <span class="n">subject</span><span class="p">,</span> <span class="n">message</span><span class="p">)</span></code>
+
+</h3>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Sends an email to the given recipients.</p>
+
+
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>recipients</code></td>
+          <td>
+                <code>list</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>List of recipient email address.</p>
+            </div>
+          </td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+        <tr>
+          <td><code>subject</code></td>
+          <td>
+                <code>str</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>Subject of the email.</p>
+            </div>
+          </td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+        <tr>
+          <td><code>message</code></td>
+          <td>
+                <code>str</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>Body of the email.</p>
+            </div>
+          </td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+          <details class="quote">
+            <summary>Source code in <code>send_email.py</code></summary>
+            <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">44</span>
+<span class="normal">45</span>
+<span class="normal">46</span>
+<span class="normal">47</span>
+<span class="normal">48</span>
+<span class="normal">49</span>
+<span class="normal">50</span>
+<span class="normal">51</span>
+<span class="normal">52</span>
+<span class="normal">53</span>
+<span class="normal">54</span>
+<span class="normal">55</span>
+<span class="normal">56</span>
+<span class="normal">57</span>
+<span class="normal">58</span>
+<span class="normal">59</span>
+<span class="normal">60</span>
+<span class="normal">61</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">send</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">recipients</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span> <span class="n">subject</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">message</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span> 
+<span class="w">	</span><span class="sd">&quot;&quot;&quot;Sends an email to the given recipients.</span>
+
+<span class="sd">	Args:</span>
+<span class="sd">		recipients (list): List of recipient email address.</span>
+<span class="sd">		subject (str): Subject of the email.</span>
+<span class="sd">		message (str): Body of the email.</span>
+<span class="sd">	&quot;&quot;&quot;</span>
+	<span class="n">email</span> <span class="o">=</span> <span class="n">MIMEMultipart</span><span class="p">()</span>
+	<span class="n">email</span><span class="p">[</span><span class="s1">&#39;From&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__from</span>
+	<span class="n">email</span><span class="p">[</span><span class="s1">&#39;To&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;, &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">recipients</span><span class="p">)</span>
+	<span class="n">email</span><span class="p">[</span><span class="s1">&#39;Subject&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">Header</span><span class="p">(</span><span class="n">subject</span><span class="p">,</span> <span class="s1">&#39;utf-8&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">encode</span><span class="p">()</span>
+	<span class="n">email_content</span> <span class="o">=</span> <span class="n">MIMEText</span><span class="p">(</span><span class="n">message</span><span class="p">,</span> <span class="s1">&#39;plain&#39;</span><span class="p">,</span> <span class="s1">&#39;utf-8&#39;</span><span class="p">)</span>
+	<span class="n">email</span><span class="o">.</span><span class="n">attach</span><span class="p">(</span><span class="n">email_content</span><span class="p">)</span>
+
+	<span class="k">with</span> <span class="n">smtplib</span><span class="o">.</span><span class="n">SMTP_SSL</span><span class="p">(</span><span class="n">GMailer</span><span class="o">.</span><span class="n">__server</span><span class="p">,</span> <span class="n">GMailer</span><span class="o">.</span><span class="n">__port</span><span class="p">,</span><span class="n">context</span><span class="o">=</span><span class="n">GMailer</span><span class="o">.</span><span class="n">__context</span><span class="p">)</span> <span class="k">as</span> <span class="n">server</span><span class="p">:</span>
+		<span class="n">server</span><span class="o">.</span><span class="n">login</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">__from</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">__password</span><span class="p">)</span> 
+		<span class="n">server</span><span class="o">.</span><span class="n">sendmail</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">__from</span><span class="p">,</span> <span class="n">recipients</span><span class="p">,</span> <span class="n">email</span><span class="o">.</span><span class="n">as_string</span><span class="p">())</span>  
+</code></pre></div></td></tr></table></div>
+          </details>
+  </div>
+
+</div>
+
+
+
+  </div>
+
+  </div>
+
+
+</div>
+
+
+
+
+  </div>
+
+  </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.c8d2eff1.min.js"></script>
+      
+    
+  </body>
+</html>
